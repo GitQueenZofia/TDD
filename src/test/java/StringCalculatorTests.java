@@ -1,5 +1,3 @@
-package org.example;
-
 import org.example.StringCalculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
