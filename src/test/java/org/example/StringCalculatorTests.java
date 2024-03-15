@@ -1,19 +1,17 @@
+package org.example;
 
 import org.example.StringCalculator;
-import org.junit.Rule;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.rules.ExpectedException;
 
-import static org.junit.Assert.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 
 public class StringCalculatorTests {
     StringCalculator calculator;
 
-    @Rule
-    public ExpectedException exceptionRule = ExpectedException.none();
 
     @BeforeEach
     void setUp() {
@@ -61,7 +59,6 @@ public class StringCalculatorTests {
         Throwable exception = assertThrows(Exception.class, () -> calculator.Calculate("-10\n5"));
         Assertions.assertEquals("Negatives not allowed.", exception.getMessage());
     }
-
     @Test
     @DisplayName("Numbers greater than 1000 are ignored.")
     public void bigNumbers() throws Exception {
