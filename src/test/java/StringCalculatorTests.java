@@ -61,7 +61,6 @@ public class StringCalculatorTests {
         Throwable exception = assertThrows(Exception.class, () -> calculator.Calculate("-10\n5"));
         Assertions.assertEquals("Negatives not allowed.", exception.getMessage());
     }
-
     @Test
     @DisplayName("Numbers greater than 1000 are ignored.")
     public void bigNumbers() throws Exception {
