@@ -21,6 +21,8 @@ public class StringCalculator {
             numbers = arg.substring(delimiterIndex + 1);
         }
 
+
+
         StringBuilder resultBuilder = new StringBuilder();
         for (int i = 0; i < delimiters.length(); i++) {
             char currentChar = delimiters.charAt(i);
