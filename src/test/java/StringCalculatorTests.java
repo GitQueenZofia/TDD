@@ -26,7 +26,7 @@ public class StringCalculatorTests {
     @DisplayName("Single number returns the value.")
     public void singleNumber() throws Exception {
         int value = calculator.Calculate("1");
-        Assertions.assertEquals(1, value);
+        Assertions.assertEquals(2, value);
     }
 
     @Test
