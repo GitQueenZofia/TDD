@@ -79,7 +79,7 @@ public class StringCalculatorTests {
         Assertions.assertEquals(6, value);
     }
     @Test
-    @DisplayName("Many delimiters can be defined on the first line.")
+    @DisplayName("Many delimiters can be defined on the first line")
     public void manyDelimiters() throws Exception {
         int value = calculator.Calculate("//[###][o]\n1###2o3");
         Assertions.assertEquals(6, value);
