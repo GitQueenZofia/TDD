@@ -1,3 +1,4 @@
+package org.example;
 
 import org.example.StringCalculator;
 import org.junit.jupiter.api.Assertions;
