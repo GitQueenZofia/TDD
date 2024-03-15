@@ -10,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class StringCalculatorTests {
     StringCalculator calculator;
 
-
     @BeforeEach
     void setUp() {
         calculator = new StringCalculator();
