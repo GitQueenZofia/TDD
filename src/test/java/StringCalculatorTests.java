@@ -68,7 +68,6 @@ public class StringCalculatorTests {
         int value = calculator.Calculate("2000\n2");
         Assertions.assertEquals(2, value);
     }
-
     @Test
     @DisplayName("A single char delimiter can be defined on the first line.")
     public void singleCharDelimiter() throws Exception {
